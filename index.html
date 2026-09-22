@@ -23,41 +23,53 @@
 
         <div class="nav">
 
-            <div class="name">
-                <a href="#">Weijia Zhang</a>
-            </div>
+            <a class="name" href="#">
+                Weijia Zhang
+            </a>
 
             <nav>
                 <a href="#about">About</a>
                 <a href="#research">Research</a>
                 <a href="#publications">Publications</a>
                 <a href="#contact">Contact</a>
-                <a href="files/Weijia_Zhang_CV.pdf"
+
+                <a class="nav-cv"
+                   href="files/Weijia_Zhang_CV.pdf"
                    target="_blank"
-                   rel="noopener noreferrer">CV ↗</a>
+                   rel="noopener noreferrer">
+                    CV ↗
+                </a>
             </nav>
 
         </div>
 
+    </header>
+
+
+    <main>
 
         <!-- HERO -->
 
-        <div class="hero">
+        <section class="hero">
 
             <p class="eyebrow">
-                Learning · Reasoning · Adaptation
+                LEARNING · REASONING · ADAPTATION
             </p>
 
-            <h1>Weijia Zhang</h1>
+            <h1>
+                Weijia Zhang<span class="accent">.</span>
+            </h1>
 
             <p class="hero-text">
-                I study how intelligent systems learn,
-                infer, and adapt when the world changes.
+                I study how intelligent systems
+                <span>learn, infer, and adapt</span>
+                when the world changes.
             </p>
 
             <p class="hero-subtext">
                 Ph.D. Candidate in Biomedical Engineering
-                at Columbia University.
+                <br>
+                Columbia University
             </p>
 
             <div class="hero-links">
@@ -65,7 +77,7 @@
                 <a href="files/Weijia_Zhang_CV.pdf"
                    target="_blank"
                    rel="noopener noreferrer">
-                    CV ↗
+                    Curriculum Vitae ↗
                 </a>
 
                 <a href="https://github.com/weijiazh97"
@@ -84,56 +96,71 @@
 
             </div>
 
-        </div>
-
-    </header>
-
-
-    <main>
+        </section>
 
 
         <!-- ABOUT -->
 
-        <section id="about">
+        <section id="about" class="content-section">
 
-            <h2>About</h2>
+            <div class="section-heading">
 
-            <p>
-                I am a Ph.D. candidate in Biomedical
-                Engineering at Columbia University,
-                working at the intersection of artificial
-                intelligence, reinforcement learning,
-                and human neuroscience.
-            </p>
+                <p class="section-number">01 / ABOUT</p>
 
-            <p>
-                My research investigates how humans and
-                artificial agents learn, reason, and adapt
-                in changing environments.
-                I combine human neural recordings,
-                computational modeling, and large
-                language model evaluation to understand
-                the mechanisms underlying flexible
-                intelligence.
-            </p>
+                <h2>About me<span class="accent">.</span></h2>
 
-            <p>
-                I am particularly interested in
-                continual learning, reasoning,
-                and developing AI systems that can
-                adapt to new information without
-                losing previously acquired knowledge.
-            </p>
+            </div>
+
+            <div class="about-content">
+
+                <p class="about-lead">
+                    I am a Ph.D. candidate in Biomedical
+                    Engineering at Columbia University,
+                    working at the intersection of
+                    artificial intelligence,
+                    reinforcement learning,
+                    and human neuroscience.
+                </p>
+
+                <p>
+                    My research investigates how humans
+                    and artificial agents learn, reason,
+                    and adapt in changing environments.
+                    I combine human neural recordings,
+                    computational modeling, and large
+                    language model evaluation to understand
+                    the mechanisms underlying flexible
+                    intelligence.
+                </p>
+
+                <p>
+                    I am particularly interested in
+                    continual learning, reasoning,
+                    and developing AI systems that
+                    adapt to new information without
+                    losing previously acquired knowledge.
+                </p>
+
+            </div>
 
         </section>
 
 
-
         <!-- RESEARCH -->
 
-        <section id="research">
+        <section id="research" class="content-section">
 
-            <h2>Research</h2>
+            <div class="section-heading">
+
+                <p class="section-number">
+                    02 / RESEARCH
+                </p>
+
+                <h2>
+                    Selected research<span class="accent">.</span>
+                </h2>
+
+            </div>
 
             <p class="section-intro">
                 My research spans human neuroscience,
@@ -145,160 +172,237 @@
 
             <!-- PROJECT 1 -->
 
-            <div class="project">
+            <article class="project">
 
-                <p class="project-label">
-                    LLM Evaluation · Reasoning ·
-                    Continual Learning
-                </p>
-
-                <h3>
-                    Revaluation in Large Language Models
-                </h3>
-
-                <p>
-                    How do language models adapt their
-                    reasoning when previously learned
-                    relationships become outdated?
-                </p>
-
-                <p>
-                    This project investigates reward
-                    and transition revaluation in
-                    language models, examining how
-                    different reasoning strategies
-                    and model architectures support
-                    flexible adaptation.
-                </p>
-
-                <div class="project-tags">
-                    <span>LLM Evaluation</span>
-                    <span>Reasoning</span>
-                    <span>Continual Learning</span>
+                <div class="project-index">
+                    01
                 </div>
 
-            </div>
+                <div class="project-content">
 
+                    <p class="project-label">
+                        LLM EVALUATION / REASONING
+                    </p>
+
+                    <h3>
+                        Revaluation in
+                        Large Language Models
+                    </h3>
+
+                    <p class="project-question">
+                        How do language models adapt their
+                        reasoning when previously learned
+                        relationships become outdated?
+                    </p>
+
+                    <p>
+                        This project investigates reward
+                        and transition revaluation in
+                        language models, examining how
+                        different reasoning strategies
+                        and model architectures support
+                        flexible adaptation.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>LLM Evaluation</span>
+
+                        <span>Reasoning</span>
+
+                        <span>Continual Learning</span>
+
+                        <span>Reinforcement Learning</span>
+
+                    </div>
+
+                </div>
+
+            </article>
 
 
             <!-- PROJECT 2 -->
 
-            <div class="project">
+            <article class="project">
 
-                <p class="project-label">
-                    Human Neuroscience ·
-                    Reinforcement Learning
-                </p>
-
-                <h3>
-                    Neural Mechanisms of Flexible Adaptation
-                </h3>
-
-                <p>
-                    How do humans update internal
-                    representations when rewards
-                    or environmental structure change?
-                </p>
-
-                <p>
-                    Using human single-neuron recordings,
-                    virtual reality, and computational
-                    models, this project investigates
-                    the neural and computational
-                    mechanisms supporting flexible
-                    learning and non-local inference.
-                </p>
-
-                <div class="project-tags">
-                    <span>Human Electrophysiology</span>
-                    <span>Reinforcement Learning</span>
-                    <span>Neural Representations</span>
+                <div class="project-index">
+                    02
                 </div>
 
-            </div>
+                <div class="project-content">
+
+                    <p class="project-label">
+                        HUMAN NEUROSCIENCE /
+                        REINFORCEMENT LEARNING
+                    </p>
+
+                    <h3>
+                        Neural Mechanisms of
+                        Flexible Adaptation
+                    </h3>
+
+                    <p class="project-question">
+                        How do humans update internal
+                        representations when rewards
+                        or environmental structure change?
+                    </p>
+
+                    <p>
+                        Using human single-neuron
+                        recordings, virtual reality,
+                        and computational models,
+                        this project investigates
+                        the neural and computational
+                        mechanisms supporting flexible
+                        learning and non-local inference.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>Human Electrophysiology</span>
+
+                        <span>Reinforcement Learning</span>
+
+                        <span>Neural Representations</span>
+
+                        <span>Computational Modeling</span>
+
+                    </div>
+
+                </div>
+
+            </article>
 
         </section>
 
 
-
         <!-- PUBLICATIONS -->
 
-        <section id="publications">
+        <section id="publications"
+                 class="content-section">
 
-            <h2>Publications</h2>
+            <div class="section-heading">
+
+                <p class="section-number">
+                    03 / PUBLICATIONS
+                </p>
+
+                <h2>
+                    Publications<span class="accent">.</span>
+                </h2>
+
+            </div>
 
             <p class="section-intro">
                 Selected publications and manuscripts.
             </p>
 
 
-            <div class="publication">
+            <article class="publication">
 
-                <h3>
-                    Cognitive Arbitration in Large
-                    Language Models during Multi-Turn
-                    Adaptive Reasoning
-                </h3>
+                <div class="publication-year">
+                    2026
+                </div>
+
+                <div class="publication-content">
+
+                    <h3>
+                        Cognitive Arbitration in
+                        Large Language Models during
+                        Multi-Turn Adaptive Reasoning
+                    </h3>
+
+                    <p class="publication-authors">
+                        <strong>Zhang W*</strong>,
+                        Lipple S*, et al.
+                    </p>
+
+                    <p class="publication-status">
+                        Manuscript in preparation
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="publication">
+
+                <div class="publication-year">
+                    2026
+                </div>
+
+                <div class="publication-content">
+
+                    <h3>
+                        Human Single Neurons and
+                        Predictive Models Reveal
+                        Representational Mechanisms
+                        of Flexible Adaptation
+                    </h3>
+
+                    <p class="publication-authors">
+                        <strong>Zhang W</strong>,
+                        et al.
+                    </p>
+
+                    <p class="publication-status">
+                        Manuscript in preparation
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <div class="publication-footer">
 
                 <p>
-                    Zhang W*, Lipple S*, et al.
+                    Additional publications and
+                    presentations are available
+                    in my curriculum vitae.
                 </p>
 
-                <p class="publication-status">
-                    Manuscript in preparation
-                </p>
-
-            </div>
-
-
-            <div class="publication">
-
-                <h3>
-                    Human Single Neurons and Predictive
-                    Models Reveal Representational
-                    Mechanisms of Flexible Adaptation
-                </h3>
-
-                <p>
-                    Zhang W, et al.
-                </p>
-
-                <p class="publication-status">
-                    Manuscript in preparation
-                </p>
-
-            </div>
-
-
-            <p>
-                Additional publications are listed
-                in my
                 <a href="files/Weijia_Zhang_CV.pdf"
                    target="_blank"
                    rel="noopener noreferrer">
-                    CV ↗
-                </a>.
-            </p>
+
+                    View full CV ↗
+
+                </a>
+
+            </div>
 
         </section>
 
 
-
         <!-- CONTACT -->
 
-        <section id="contact">
+        <section id="contact"
+                 class="content-section contact-section">
 
-            <h2>Contact</h2>
+            <div class="section-heading">
 
-            <p>
+                <p class="section-number">
+                    04 / CONTACT
+                </p>
+
+                <h2>
+                    Get in touch<span class="accent">.</span>
+                </h2>
+
+            </div>
+
+            <p class="contact-intro">
                 I welcome conversations and
                 collaborations on reinforcement
                 learning, language models,
                 and computational neuroscience.
             </p>
 
-            <p>
-                Columbia University<br>
+            <p class="contact-location">
+                Columbia University
+                <br>
                 New York, NY
             </p>
 
@@ -307,22 +411,24 @@
                 <a href="https://github.com/weijiazh97"
                    target="_blank"
                    rel="noopener noreferrer">
+
                     GitHub ↗
+
                 </a>
 
                 <a href="files/Weijia_Zhang_CV.pdf"
                    target="_blank"
                    rel="noopener noreferrer">
-                    CV ↗
+
+                    Curriculum Vitae ↗
+
                 </a>
 
             </div>
 
         </section>
 
-
     </main>
-
 
 
     <!-- FOOTER -->
@@ -334,11 +440,10 @@
         </p>
 
         <p>
-            Columbia University
+            Built with curiosity.
         </p>
 
     </footer>
-
 
 </body>
 
