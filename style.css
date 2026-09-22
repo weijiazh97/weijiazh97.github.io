@@ -770,3 +770,27 @@ main {
         padding: 60px 0;
     }
 }
+
+.about-section {
+    display: flow-root;
+}
+
+.profile-photo {
+    width: 180px;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    float: right;
+    margin: 0 0 20px 32px;
+}
+
+@media (max-width: 600px) {
+    .profile-photo {
+        float: none;
+        display: block;
+        width: 160px;
+        height: 200px;
+        margin: 0 0 24px;
+    }
+}
