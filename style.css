@@ -129,65 +129,49 @@ main {
     white-space: nowrap;
 }
 
-/* =========================================================
-   HERO
-   ========================================================= */
 
-.hero {
-    padding: 90px 0 100px;
-    border-bottom: 1px solid var(--border);
+/* ===================================
+   HERO WITH PORTRAIT
+=================================== */
+
+.hero-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 240px;
+    align-items: start;
+    gap: 64px;
 }
 
-.eyebrow {
-    display: none;
+.hero-content {
+    min-width: 0;
 }
 
-.hero h1 {
-    font-size: 48px;
-    font-weight: 600;
-    letter-spacing: -0.04em;
-    line-height: 1.2;
-    margin-bottom: 20px;
+.profile-photo {
+    display: block;
+    width: 240px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+    margin-top: 8px;
 }
 
-.hero-text {
-    max-width: 650px;
+/* ===================================
+   MOBILE
+=================================== */
 
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.6;
-    letter-spacing: -0.01em;
+@media (max-width: 700px) {
+    .hero-layout {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
 
-    margin: 0 0 24px;
+    .profile-photo {
+        grid-row: 1;
+        width: 180px;
+        height: 225px;
+        margin-top: 0;
+    }
 }
-
-.hero-text span {
-    color: inherit;
-}
-
-.hero-subtext {
-    font-size: 15px;
-    line-height: 1.7;
-    color: var(--secondary);
-    margin-bottom: 0;
-}
-
-.hero-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    margin-top: 32px;
-}
-
-.hero-links a {
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: none;
-
-    border-bottom: 1px solid currentColor;
-    padding-bottom: 4px;
-}
-
 /* =========================================================
    SECTIONS
    ========================================================= */
