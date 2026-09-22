@@ -190,15 +190,19 @@ main {
 
 /* ABOUT */
 .about-section {
-    display: flow-root;
-    max-width: 900px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 130px;
+    column-gap: 36px;
+    align-items: start;
+    max-width: 850px;
 }
 
 .about-section p {
+    grid-column: 1;
     font-size: 16px;
-    line-height: 1.9;
+    line-height: 1.85;
     color: var(--secondary);
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 
 .about-section p:last-child {
@@ -206,13 +210,14 @@ main {
 }
 
 .profile-photo {
-    float: right;
-    width: 180px;
-    height: 220px;
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    display: block;
+    width: 130px;
+    height: 160px;
     object-fit: cover;
-    object-position: center;
-    border-radius: 8px;
-    margin: 0 0 20px 32px;
+    object-position: center top;
+    border-radius: 4px;
 }
 
 /* RESEARCH */
@@ -438,12 +443,20 @@ main {
         font-size: 15px;
     }
 
+    .about-section {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
     .profile-photo {
-        float: none;
-        display: block;
-        width: 160px;
-        height: 200px;
-        margin: 0 0 24px;
+        grid-column: 1;
+        grid-row: 1;
+        width: 110px;
+        height: 140px;
+    }
+
+    .about-section p {
+        grid-column: 1;
     }
 
     .project {
