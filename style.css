@@ -638,3 +638,135 @@ main {
     }
 
 }
+
+
+/* ===================================
+   MINIMAL PROFESSIONAL DESIGN
+=================================== */
+
+:root {
+    --background: #ffffff;
+    --text: #222222;
+    --secondary: #666666;
+    --muted: #888888;
+    --border: #e8e8e8;
+    --accent: #222222;
+    --content-width: 900px;
+}
+
+/* Navigation */
+
+.nav {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 28px 48px;
+}
+
+/* Hero */
+
+.hero {
+    padding: 90px 0 100px;
+    border-bottom: 1px solid var(--border);
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero .accent {
+    display: none;
+}
+
+.eyebrow {
+    display: none;
+}
+
+.hero-text {
+    max-width: 650px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+    color: var(--text);
+    margin-top: 32px;
+}
+
+.hero-text span {
+    color: inherit;
+}
+
+.hero-subtext {
+    font-size: 15px;
+    color: var(--secondary);
+    line-height: 1.7;
+}
+
+.hero-links {
+    margin-top: 32px;
+    gap: 24px;
+}
+
+/* Sections */
+
+.content-section {
+    padding: 75px 0;
+}
+
+.section-number {
+    display: none;
+}
+
+.section-heading {
+    margin-bottom: 32px;
+}
+
+.section-heading h2 {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+}
+
+.section-heading .accent {
+    display: none;
+}
+
+/* Research */
+
+.project {
+    padding: 36px 0;
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+
+.project-index {
+    display: none;
+}
+
+.project h3 {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 65px 0 75px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-text {
+        font-size: 18px;
+    }
+
+    .content-section {
+        padding: 60px 0;
+    }
+}
